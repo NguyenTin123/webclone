@@ -356,7 +356,7 @@ body.hide-dzomenu #cover-menu-dzo {
 
         #cover-menu-dzo #menu_dzo #headermobile .nav-mobile .logo-box {
             display: block;
-            background: url(/image/LogoDzogame.png) no-repeat 0 0;
+            background-image: url("../image/icon-header-mb.png") no-repeat 0 0;
             background-size: cover;
             width: 135px;
             height: 50px;
@@ -476,7 +476,7 @@ body.hide-dzomenu #cover-menu-dzo {
                                     height: 100%;
                                     left: 0;
                                     top: 0;
-                                    background-image: url(/image/icon-header-mb.png);
+                                    background-image: url("../image/icon-header-mb.png");
                                     background-repeat: no-repeat;
                                     background-size: auto 100%;
                                     background-position-y: 0;
@@ -598,7 +598,7 @@ body.hide-dzomenu #cover-menu-dzo {
                                     height: 100%;
                                     left: 0;
                                     top: 0;
-                                    background-image: url(/image/icon-header-mb.png);
+                                    background-image: url("../image/icon-header-mb.png");
                                     background-repeat: no-repeat;
                                     background-size: auto 100%;
                                     background-position-y: 0;
