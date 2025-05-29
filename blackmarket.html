@@ -1,0 +1,3076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.gstatic.com"><link href="/CSS/css2.css" rel="stylesheet"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>black-market - Chiến Địa - Chiến Không Giới Hạn</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="https://chiendia.dzogame.vn/Assets/Landing2025/imgs/mobile/Icon.png" type="image/x-icon">
+<link rel="shortcut icon" href="https://chiendia.dzogame.vn/Assets/Landing2025/imgs/mobile/Icon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- Website Meta -->
+<meta name="robots" content="index,follow">
+<meta name="author" content=" Chiến Địa - Chiến Không Giới Hạn">
+<meta name="title" content="black-market - Chiến Địa - Chiến Không Giới Hạn">
+<meta name="description" content="Chiến Địa - Nạp cực rẻ, lợi tức cực khủng, Nạp 5K nhận ngay thẻ tăng level và quà nạp đầu, Giảm 30% nạp qua webshop. Deal hơi chờ bạn, Chiến Địa - Nạp ở đây, giảm ngay 30%, Nạp giá rẻ game Chiến Địa tại webshop ngay hôm nay,Đua top nhận ngay xe máy Vinfast. Nạp đi chờ chi, Anh em đồng lòng đua top, nhận ngay quà toàn bang. Xưng đế ngay!,Quà cực nhiều, ưu đãi lớn, nạp cực hời. Không nạp là buồn lắm á!">
+<meta name="keywords" content="chiến địa nạp, chien dia nap, nạp chiến địa, nap chien dia, nạp giá rẻ game chiến địa, game chiến địa nạp ở đâu, dzogame nạp, nạp dzogame, nạp game chiến địa như thế nào, cách nạp game chiến địa, webshop, webshop dzogame, chiến địa webshop, dzo đồng, dzo ví, ưu đãi nạp game chiến địa, nạp giảm giá game chiến địa, nạp chiến địa ở đâu, nạp game">
+<link rel="canonical" href="blackmarket.html">
+<meta name="type" content="website">
+
+<!-- Meta Facebook -->
+<meta property="og:image" content="https://chiendia.dzogame.vn/Assets/Home/imgs/Index/BG1.png">
+<meta property="og:image:secure_url" content="https://chiendia.dzogame.vn/Assets/Home/imgs/Index/BG1.png">
+
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Chiến Địa">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="black-market - Chiến Địa">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:url" content="blackmarket.html">
+<meta property="og:title" content="black-market - Chiến Địa - Chiến Không Giới Hạn">
+<meta property="og:description" content="Chiến Địa - Chiến Không Giới Hạn">
+<meta property="og:keywords" content="chiến địa nạp, chien dia nap, nạp chiến địa, nap chien dia, nạp giá rẻ game chiến địa, game chiến địa nạp ở đâu, dzogame nạp, nạp dzogame, nạp game chiến địa như thế nào, cách nạp game chiến địa, webshop, webshop dzogame, chiến địa webshop, dzo đồng, dzo ví, ưu đãi nạp game chiến địa, nạp giảm giá game chiến địa, nạp chiến địa ở đâu, nạp game">
+<meta property="og:robots" content="index,follow">
+<meta property="fb:app_id" content="263801529944463">
+<meta property="fb:pages" content="183343541527220">
+
+    <!-- Meta Pixel Code -->
+<script type="text/javascript" async="" src="/JS/identify_935b0d03.js"></script><script type="text/javascript" async="" src="/JS/main.MWNiZTQ2MTFhMA.js" data-id="CLMQ193C77UEE5O8AGRG"></script><script type="text/javascript" async="" src="/JS/events.js"></script><script src="/JS/933305411458632.js" async=""></script><script async="" src="/JS/fbevents.js"></script><script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        '/JS/fbevents.js');
+    fbq('init', '933305411458632');
+    fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+
+<meta name="facebook-domain-verification" content="pajzp8as8e2gyn6eed7h1wg2qimv69">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="/JS/js.js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11432137975');
+</script>
+<!-- End Google tag (gtag.js) -->
+
+<!-- Tiktok Pixel Code -->
+<script>
+    !function (w, d, t) {
+        w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e }, ttq.load = function (e, n) { var i = "https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
+
+        ttq.load('CLMQ193C77UEE5O8AGRG');
+        ttq.page();
+    }(window, document, 'ttq');
+</script>
+<!-- End Tiktok Pixel Code -->
+
+<!-- Event snippet for Đăng ký sớm | Chiến Địa Web conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof (url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11432137975/RC1dCPLztPwYEPepossq',
+            'event_callback': callback
+        });
+        return false;
+    }
+</script>
+
+    
+    
+    <link href="/CSS/less.css" rel="stylesheet">
+
+
+    <style>
+        .swal-text {
+            text-align: center;
+        }
+    </style>
+
+    <link href="/CSS/less2.css" rel="stylesheet">
+
+    <link href="/CSS/css.css" rel="stylesheet">
+
+    <script src="/JS/jquery.js"></script>
+
+    
+<script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11432137975/?random=1748140386970&amp;cv=11&amp;fst=1748140386970&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be55l1v9172417121za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103130498~103130500~103200004~103233427~103252644~103252646~104481633~104481635&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fchiendia.dzogame.vn%2Fblack-market&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=black-market%20-%20Chi%E1%BA%BFn%20%C4%90%E1%BB%8Ba%20-%20Chi%E1%BA%BFn%20Kh%C3%B4ng%20Gi%E1%BB%9Bi%20H%E1%BA%A1n&amp;npa=0&amp;pscdl=noapi&amp;auid=755562299.1748087818&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B136.0.7103.114%7CGoogle%2520Chrome%3B136.0.7103.114%7CNot.A%252FBrand%3B99.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script><link rel="stylesheet" type="text/css" href="/CSS/DzoHeaderMenu2025.css"><script src="/JS/amlich.js" type="text/javascript"></script></head>
+
+<body class="dzo-ready" data-new-gr-c-s-check-loaded="14.1235.0" data-gr-ext-installed="" style=""><div id="cover-menu-dzo"> <div id="menu_dzo">
+            <div id="menu_container">
+                <div id="headerpc" class="header-menu">
+                    <a href="https://dzogame.vn/" target="_blank" class="logo">
+                        <img id="img-logo-dzo" src="/image/Original.webp" alt="Logo">
+                    </a>
+                    <nav class="nav">
+                        <a class="parent-menu" href="https://dzogame.vn/dzonews" target="_blank">DzoNews</a>
+                        <a class="parent-menu" href="https://dzostore.vn/" target="_blank">DzoStore</a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-btn active">Sản Phẩm</a>
+                            <div class="dropdown-content">
+                                <div class="filter-bar">
+                                    <button class="filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> All Games</button>
+                                    <button class="filter-btn" data-filter="pc"><i class="fas fa-desktop"></i> PC Games</button>
+                                    <button class="filter-btn" data-filter="mobile"><i class="fas fa-mobile-alt"></i> Mobile Games</button>
+                                </div>
+                                <div class="product-grid">
+                                    <a href="https://cuulongchiton.dzogame.vn/" target="_blank" class="product-item pc">
+                                        <img src="/image/9DU.png" alt="Cửu Long Chí Tôn">
+                                        <span>Cửu Long Chí Tôn</span>
+                                    </a>
+                                    <a href="https://dzostore.vn/Melojam" target="_blank" class="product-item mobile">
+                                        <img src="/image/MLJ.png" alt="Melojam">
+                                        <span>Melojam</span>
+                                    </a>
+                                    <a href="https://chiendia.dzogame.vn/" target="_blank" class="product-item mobile pc">
+                                        <img src="/image/CD.png" alt="Chiến Địa">
+                                        <span>Chiến Địa</span>
+                                    </a>
+                                    <a href="https://oa.dzogame.vn/" target="_blank" class="product-item mobile">
+                                        <img src="/image/OAM.png" alt="Đấu Trường Onmyoji">
+                                        <span>Đấu Trường Onmyoji</span>
+                                    </a>
+                                    <a href="https://hkm.dzogame.vn/" target="_blank" class="product-item mobile">
+                                        <img src="/image/HKM.png" alt="Hiệp Khách Mobile">
+                                        <span>Hiệp Khách Mobile</span>
+                                    </a>
+                                    <a href="https://3k.dzogame.vn/" target="_blank" class="product-item pc">
+                                        <img src="/image/3K.png" alt="Tam Quốc Chí">
+                                        <span>Tam Quốc Chí</span>
+                                    </a>
+                                    <a href="https://123.dzogame.vn/" target="_blank" class="product-item pc">
+                                        <img src="/image/123Dzogame.png" alt="123Dzo">
+                                        <span>Cổng 123DzoGame</span>
+                                    </a>
+                                    <a href="https://ah.dzogame.vn/" target="_blank" class="product-item mobile">
+                                        <img src="/image/WA.png" alt="123Dzo">
+                                        <span>Anh Hùng Viễn Chinh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="nav right">
+                         <div class="dropdown">
+                            <a href="#" class="dropdown-btn">Về Chúng Tôi</a>
+                            <div class="dropdown-content-tk th">
+                                <a href="https://dzogame.vn/about" target="_blank" class="menu-tk"><span class="icon dzo"></span>DzoGame</a>
+                                <a href="https://dzogame.vn/job" target="_blank" class="menu-tk"><span class="icon job"></span>Tuyển Dụng</a>
+                                <a href="#" target="_blank" class="menu-tk"><span class="icon gioithieu"></span>Liên Hệ</a>
+                            </div>
+                        </div>
+                        <a class="parent-menu" href="https://vi.dzogame.vn/" target="_blank">Nạp Tiền</a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-btn">Tài Khoản</a>
+                            <div class="dropdown-content-tk">
+                                <a href="https://id.dzogame.vn/" target="_blank" class="menu-tk"><span class="icon regist"></span>Đăng Nhập</a>
+                                <a href="https://id.dzogame.vn/dang-ky" target="_blank" class="menu-tk"><span class="icon login"></span>Đăng Ký</a>
+                                <a href="https://hotro.dzogame.vn/" target="_blank" class="menu-tk"><span class="icon support"></span>Hỗ Trợ</a>
+                                <a href="https://id.dzogame.vn/huong-dan-tao-tai-khoan" target="_blank" class="menu-tk"><span class="icon instruct"></span>Hướng Dẫn</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="button">
+                        <a href="https://dzogame.vn/launcher" target="_blank" class="btn-launcher"></a>
+                    </div>
+                </div>
+                <div id="headermobile">
+			    	<div class="nav-mobile">
+			    		<div id="page-open-left-dzomenu">
+			    			<a href="javascript:" id="left-dzomenu-mb-btn" class="open-left-dzomenu-button">
+			    				<i class="fas fa-align-justify"></i>
+			    				<i class="fas fa-times"></i>
+			    			</a>
+			    			<div id="left-dzomenu-mb">
+			    				<nav class="navbar">
+			    					<ul class="nav navbar-nav">
+			    						<li><a href="https://dzogame.vn/dzonews" target="_blank"><span>DzoNews</span></a></li>
+                                        <li><a href="https://dzostore.vn/" target="_blank"><span>DzoStore</span></a></li>
+			    						<li><a href="https://dzogame.vn/san-pham"><span>Sản Phẩm</span></a></li>
+                                        <li><a href="https://dzogame.vn/about" target="_blank"><span>Về Chúng Tôi</span></a></li>
+                                        <li><a href="https://dzogame.vn/job" target="_blank"><span>Tuyển Dụng</span></a></li>
+			    						<li><a href="#" target="_blank"><span>Liên Hệ</span></a></li>
+			    						<li>
+			    							<a class="icon-mb icon-mb-dzovi" href="https://vi.dzogame.vn/" target="_blank"></a>
+			    							<a class="icon-mb icon-mb-sp" href="https://hotro.dzogame.vn/" target="_blank"></a>
+			    							<a class="icon-mb icon-mb-gg-play" href="https://play.google.com/store/apps/dev?id=8075852694625463487" target="_blank"></a>
+			    							<a class="icon-mb icon-mb-app-store" href="https://apps.apple.com/vn/developer/asiasoft-co-ltd/id959827394" target="_blank"></a>
+			    						</li>
+			    					</ul>
+			    				</nav>
+			    			</div>
+			    		</div>
+			    		<div class="logo-box">
+			    			<a href="https://dzogame.vn" class="logo"></a>
+			    		</div>
+			    		<div id="page-open-right-dzomenu">
+			    			<a href="javascript:" id="right-dzomenu-mb-btn" class="open-right-dzomenu-button">
+			    				<i class="far fa-user"></i>
+			    				<i class="fas fa-times"></i>
+			    			</a>
+			    			<div id="right-dzomenu-mb">
+			    				<nav class="navbar">
+			    					<!--<ul class="nav navbar-nav">
+
+			    						<li><a href="mailto:info@dzogame.vn" target="_blank">Liên Hệ</a></li>
+			    						<li><a href="https://www.facebook.com/dzogame.vn/" target="_blank">Facebook</a></li>
+			    						<li><a href="https://www.youtube.com/channel/UCmO9fJWNGL1bwpCFu9YOysg" target="_blank">Youtube</a></li>
+			    					</ul>-->
+			    					<ul class="nav navbar-nav">
+
+			    						<!--<li><a href="mailto:info@dzogame.vn" target="_blank">Liên Hệ</a></li>
+			    						<li><a href="https://www.facebook.com/dzogame.vn/" target="_blank">Facebook</a></li>
+			    						<li><a href="https://www.youtube.com/channel/UCmO9fJWNGL1bwpCFu9YOysg" target="_blank">Youtube</a></li>
+			    						<li><a href="https://play.google.com/store/apps/dev?id=8075852694625463487" target="_blank"><span>CH Play</span></a></li>
+			    						<li><a href="https://apps.apple.com/vn/developer/asiasoft-co-ltd/id959827394" target="_blank"><span>App Store</span></a></li>-->
+			    						<li>
+			    							<a class="icon-mb icon-mb-mail" href="mailto:info@dzogame.vn" target="_blank"></a>
+			    							<a class="icon-mb icon-mb-fb" href="https://www.facebook.com/dzogame.vn/" target="_blank"></a>
+			    							<a class="icon-mb icon-mb-yu" href="https://www.youtube.com/channel/UCmO9fJWNGL1bwpCFu9YOysg/" target="_blank"></a>
+			    						</li>
+			    					</ul>
+			    				</nav>
+			    			</div>
+			    		</div>
+			    	</div>
+    		    </div>
+            </div>
+        </div>
+        </div>
+    <!-- Google Tag Manager (noscript) -->
+<!--<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQMVDM8"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>-->
+<!-- End Google Tag Manager (noscript) -->
+
+<noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=933305411458632&ev=PageView&noscript=1" />
+</noscript>
+    <input hidden="" value="https://chiendia.dzogame.vn" id="rootUrl">
+    <div class="loading loading-ws" style="display: none;">
+        <div class="lds-dual-ring"></div>
+    </div>
+
+    
+
+
+<div class="popup popup-login" style="display: none">
+    <div class="box">
+        <a href="javascript:CloseLogin();" class="btn-close"></a>
+        <div class="title-popup">ĐĂNG NHẬP</div>
+        <div class="body-popup">
+<form action="/BlackMarket/BlackMarketLogin" data-ajax="true" data-ajax-begin="OnAJAXLoginBegin" data-ajax-failure="LoginFail" data-ajax-method="POST" data-ajax-success="LoginSuccess" id="formLogin" method="post" role="form" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="i7juroDhBuk-eZsGx0QxHz71-cTmVbkWCh4P1vUD4_BZuywOrqLuP_ttdpgJjKRGP4PhuPmRWKXT8bBGDcmcUCxqpI10VTPv2--wcR9AJ7E1">                <div class="form-group form-loginID-pass">
+                    <input class="form-input" data-val="true" data-val-required="Vui lòng nhập tài khoản Dzogame!" id="inputLoginId" name="LoginID" placeholder="Email hoặc số điện thoại..." type="text" value="">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="LoginID" data-valmsg-replace="true"></span>
+                </div>
+                <div class="form-group form-loginID-pass">
+                    <input class="form-input" data-val="true" data-val-required="Vui lòng nhập mật khẩu!" id="inputLoginPass" name="Password" placeholder="Mật khẩu..." type="password">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                </div>
+                <div class="form-group">
+                    <div class="captcha-container">
+                        <input autocomplete="off" class="form-input" data-val="true" data-val-required="Captcha không hợp lệ!" id="inputLoginCaptcha" name="Captcha" placeholder="Nhập mã Captcha" type="text" value="">
+                        <div class="captcha-image-container">
+                            <img class="captcha-image" src="https://chiendia.dzogGenerateCaptchaame.vn/Base/">
+                            <img class="captcha-reload" onclick="javascript:RefreshCaptcha();" src="/image/reload-captcha.png" alt="Tải lại Captcha" title="Tải lại Captcha">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input checked="checked" class="form-check-input" data-val="true" data-val-required="The CheckAgrees field is required." id="CheckAgrees" name="CheckAgrees" type="checkbox" value="true"><input name="CheckAgrees" type="hidden" value="false">
+                    <label class="form-check-label" for="IsChecked">
+                        Tôi đã đọc và đồng ý <a href="https://id.dzogame.vn/quy-che-tai-khoan" target="_blank"> Quy Chế Tài Khoản</a> &amp; <a href="https://chiendia.dzogame.vn/nap-the/quy-tac-cua-tro-choi-25046" target="_blank">Quy Tắc Trò Chơi</a>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="form-button button-dzo-login" value="Đăng Nhập">
+                </div>
+                <div class="form-group form-register-group">
+                    <a href="https://id.dzogame.vn/dang-ky" target="_blank">Đăng Ký mới</a>
+                    <a href="https://id.dzogame.vn/quen-mat-khau" target="_blank">Quên mật khẩu</a>
+                    <a href="https://id.dzogame.vn/nhan-link" target="_blank">Nhận lại link kích hoạt</a>
+                </div>
+                <div class="form-group form-or-group">
+                    <span class="line"></span>
+                    <span class="text">&nbsp;HOẶC&nbsp;</span>
+                    <span class="line"></span>
+                </div>
+                <input hidden="" id="txtLoginRef" value="">
+                <div class="form-group ">
+                    <a class="form-button button-fb-login" href="javascript:LoginFB();">Đăng Nhập Với Facebook</a>
+                </div>
+                <div class="form-group ">
+                    <a class="form-button button-gg-login" href="javascript:LoginGG();">Đăng Nhập Với Google</a>
+                </div>
+                <div class="form-group ">
+                    <a class="form-button button-apple-login" href="javascript:LoginAP();">Đăng Nhập Với Apple</a>
+                </div>
+</form>        </div>
+    </div>
+</div>
+    <div class="popup popup-choose-server" style="display: none">
+    <div class="box-choose-server">
+        <a href="javascript:CloseChooseServer();" class="btn-close"></a>
+        <div class="title-popup"></div>
+        <div class="body-popup">
+<form action="/WebShop/ChooseServer" data-ajax="true" data-ajax-begin="OnAJAXChooseServerBegin" data-ajax-failure="ChooseServerFail" data-ajax-method="POST" data-ajax-success="ChooseServerSuccess" id="formChooseServer" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="1R8ARer0v0KHDc_D1NleCE-z9e_gdEMCOLjZAbb4pmEXKK_pm0nNcuXV7Kwd3R85D9ysJh-cCBcM7EJ4nmWAUrOfutXchhXUEbijTag6izQ1">                <div class="form-group">
+                    <label class="control-label col-sm-3 col-xs-3" for="email">Chọn Server:</label>
+                    <div class="col-sm-9 col-xs-9">
+                        <select id="list_server" name="serverName" class="form-input" onchange="ServerChange(event)">
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3 col-xs-3" for="email">Chọn Nhân vật:</label>
+                    <div class="col-sm-9 col-xs-9">
+                        <select id="character_name" name="serverId" class="form-input">
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="form-button button-dzo-login" value="Xác Nhận">
+                </div>
+</form>        </div>
+    </div>
+</div>
+
+
+    <div class="loading loading-ws" style="display: none">
+        <div class="lds-dual-ring"></div>
+    </div>
+
+    <div class="loading-gift" style="display: none">
+        <div class="loading">
+            <p>Đang Nhận Quà<span class="dots">...</span></p>
+        </div>
+    </div>
+
+
+    <script src="/JS/js1.js"></script>
+
+
+    <main role="main" class="main-container">
+        
+
+
+
+
+
+
+<header class="header-container pc">
+    <div class="logo-game">
+        <a href="https://chiendia.dzogame.vn" class="logo"></a>
+    </div>
+
+    <div class="header-nav">
+        <div class="nav-links">
+            
+            
+            <a href="quamoingay.html" class="link-nav" style="position: relative; animation: glitch 1s infinite linear alternate-reverse; ">Quà Mỗi Ngày</a>
+            <a href="blackmarket.html" class="link-nav show" style="position: relative; animation: glitch 1s infinite linear alternate-reverse; ">Black Market</a>
+            <a href="tichtieu.html" class="link-nav" style="position: relative; animation: glitch 1s infinite linear alternate-reverse; ">Tích Tiêu</a>
+            
+
+            <a href="webshop.html" class="link-nav">WebShop</a>
+            
+            <!--<div class="dropdown">
+    <a class="link-nav-item" href="#" role="button" id="dropdownNews" data-bs-toggle="dropdown" aria-expanded="false">
+        Event
+    </a>
+    <ul class="dropdown-menu text-center bg-dark text-light bg-opacity-75" aria-labelledby="dropdownNews">-->
+            
+            
+            
+            <!--<li><a class="dropdown-item" style="display: flex; justify-content: center; align-items: center;" href="https://chiendia.dzogame.vn/event/tich-tieu-nhan-qua">Tích Tiêu<span class="img-ruby"></span></a></li>
+        </ul>
+    </div>-->
+            <a href="javascript:checkDzoVi()" class="link-nav">
+                Nạp Ruby <div class="img-ruby"></div>
+            </a>
+        </div>
+        <div class="nav-icons"></div>
+        <div class="banner-ruby">
+            <a href="#" class="btn-banner-ruby"></a>
+            <a href="#" class="btn-banner-ruby live"></a>
+        </div>
+    </div>
+
+</header>
+
+<header class="header-container mobile">
+    <div class="nav-mobile ">
+        <a href="https://chiendia.dzogame.vn" class="logo"></a>
+        <div class="nav-links">
+            
+            
+            <a href="quamoingay.html" class="link-nav" style="position: relative; animation: glitch 1s infinite linear alternate-reverse; "><span>Quà Mỗi Ngày</span></a>
+            <a href="blackmarket.html" class="link-nav show" style="position: relative; animation: glitch 1s infinite linear alternate-reverse; "><span>Black Market</span></a>
+            <a href="tichtieu.html" class="link-nav" style="position: relative; animation: glitch 1s infinite linear alternate-reverse; "><span>Tích Tiêu</span></a>
+            
+            <a href="webshop.html" class="link-nav">WebShop</a>
+            <!--<div class="dropdown">
+    <a class="link-nav-item" href="#" role="button" id="dropdownNews" data-bs-toggle="dropdown" aria-expanded="false">
+        Event
+    </a>
+    <ul class="dropdown-menu text-center bg-dark text-light bg-opacity-75" aria-labelledby="dropdownNews">-->
+            
+            
+            
+            <!--<li><a class="dropdown-item" style="display: flex; justify-content: center; align-items: center;" href="https://chiendia.dzogame.vn/event/tich-tieu-nhan-qua">Tích Tiêu<span class="img-ruby"></span></a></li>
+        </ul>
+    </div>-->
+            <a href="javascript:checkDzoVi()" class="link-nav">
+                Nạp Ruby <div class="img-ruby"></div>
+            </a>
+        </div>
+    </div>
+
+</header>
+<script>
+    $(document).ready(() => {
+        $(".icon-open").click(function () {
+            $(".icon-open").toggleClass("close");
+            if ($(".icon-open").hasClass("close")) {
+                $(".header-nav").show();
+                $(".header-nav").attr("style", "display:flex");
+                setTimeout(function () {
+                    $(".header-nav").addClass("show");
+
+                }, 100);
+
+            } else {
+
+                $(".header-nav").removeClass("show");
+                setTimeout(function () {
+                    $(".header-nav").fadeOut("slow");
+                }, 100);
+
+            }
+        })
+
+
+        var stringUrl = window.location.href;
+        $(".link-nav").removeClass("show");
+
+        if (stringUrl.indexOf("black-market") > 0) {
+            $(".link-nav:nth-child(2)").addClass("show");
+        }
+        if (stringUrl.indexOf("tich-tieu-nhan-qua") > 0) {
+            $(".link-nav:nth-child(3)").addClass("show");
+        }
+        if (stringUrl.indexOf("qua-moi-ngay") > 0) {
+            $(".link-nav:nth-child(1)").addClass("show");
+        }
+        else if (stringUrl.indexOf("web-shop") > 0) {
+            $(".link-nav:nth-child(4)").addClass("show");
+        }
+
+        //if (stringUrl.indexOf("phuc-loi-nap") > 0) {
+        //    $(".link-nav:nth-child(2)").addClass("show");
+        //}
+      
+        //else if (stringUrl.indexOf("web-shop") > 0 || stringUrl.indexOf(window.location.host) > 0) {
+        //    $(".link-nav:nth-child(3)").addClass("show");
+        //}
+    })
+</script>
+
+
+<div id="popup-banner" class="popup-banner-box">
+    <div class="popup-banner">
+        <a href="javascript:closeBanner()" class="icon-close"></a>
+    </div>
+</div>
+
+
+<div class="popup-history" style="display: none">
+    <div class="history-container">
+        <div class="history-content">
+            <button type="button" class="btn-close" aria-label="Close" onclick="hidePopupHistory();">ⓧ</button>
+            <div class="content-detail">
+                <div class="spin-history">
+                    <table id="id-table-history">
+                        <thead>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<input type="hidden" value="https://chiendia.dzogame.vn" id="RootUrl">
+<input type="hidden" id="err">
+<input type="hidden" id="isLogin" value="0">
+<input type="hidden" id="char-name">
+<input type="hidden" id="server-name">
+
+
+
+<div class="main">
+    <div class="containers">
+        <div class="row">
+            <div class="title-black-market">
+                <div class="text-sub">
+                    
+                </div>
+            </div>
+            <div class="menu-item-searchbox">
+                <div class="search-box-container">
+                    <input id="txtItemName" class="search-box form-control" type="text" placeholder="Tìm kiếm vật phẩm">
+                    <div class="btn-search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="info-server-role ">
+                    <div onclick="ShowLogin('black-market')" class="text-login">Bạn Chưa Đăng Nhập Tài Khoản !</div>
+            </div>
+
+            
+<div class="listbox">
+    <ul class="listboxs" id="Tab-search-all" style="display: flex;">
+        
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 100 Thuốc Thể Lực BOSS </span>
+                                    <span class="item-name">-  50 Vé Tầm Bảo Chiến Hồn </span>
+                                    <span class="item-name">-  50 Ngọc Thánh Lâm </span>
+                                    <span class="item-name">-  100 Vé Triệu Hồi Cao </span>
+                                    <span class="item-name">-  10 Rương T.Bị Tinh Linh Đỏ 2 Sao NN</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_1.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Trợ Lực</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 10 Rương Đá Khắc </span>
+                                    <span class="item-name">-  3 Ngọc Đá Khắc - Cực</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_2.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Đá Khắc</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 5 Đá Thánh Vật Cao </span>
+                                    <span class="item-name">-  5 Đá Thần Thoại Cao </span>
+                                    <span class="item-name">-  5 Đá Tấn Công Lv6 </span>
+                                    <span class="item-name">-  5 Đá Phòng Ngự Lv6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_3.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Hợp Thành</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 150,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 4 Đá Tấn Công Lv8 </span>
+                                    <span class="item-name">-  4 Đá Phòng Ngự Lv8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_4.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Hợp Thành Cao</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 200,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Gói Bộ T.Bị Thánh Ngân </span>
+                                    <span class="item-name">-  1 Rương T.Sức Thánh Ngân TC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_5.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Cộng Hưởng TB</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 100 Rương Tinh Linh UR Tự Chọn </span>
+                                    <span class="item-name">-  1 Rương KN Tinh Linh Trung Cấp TC </span>
+                                    <span class="item-name">-  1 Rương KN Tinh Linh Cao Cấp TC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_6.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Tinh Linh</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 200,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 50 Mảnh Hip Hop Never Die (Tập Thể) </span>
+                                    <span class="item-name">-  50 Mảnh Vũ Điệu Thanh Xuân (Cá Nhân)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_7.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Động Tác</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 150,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 50 Mảnh Long Hồn Sơ </span>
+                                    <span class="item-name">-  50 Lõi Long Hồn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_8.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Long Hồn</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 500 Mảnh Ghép Tinh Thạch Tăng Cường </span>
+                                    <span class="item-name">-  5 Long Châu Thiên Mạch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_9.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Long Châu</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 200,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 20 Bánh Răng Ma Tượng - Công </span>
+                                    <span class="item-name">-  20 Bánh Răng Ma Tượng - Phòng </span>
+                                    <span class="item-name">-  2 KN Ma Tượng Tự Chọn 4 (SP) </span>
+                                    <span class="item-name">-  1 KN Ma Tượng Tự Chọn 6 UR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_10.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Ma Tượng</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 150,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Mộng Yểm Long </span>
+                                    <span class="item-name">-  15 Long Hồn Chi Lực </span>
+                                    <span class="item-name">-  15 Long Hồn Chi Linh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_11.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Chiến Hồn</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 300,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 20 Thuốc Hợp Thành Hồn Tinh - Quang </span>
+                                    <span class="item-name">-  20 Thuốc Hợp Thành Hồn Tinh - Ám </span>
+                                    <span class="item-name">-  20 Thuốc Hợp Thành Hồn Tinh - Phong </span>
+                                    <span class="item-name">-  20 Thuốc Hợp Thành Hồn Tinh - Hỏa </span>
+                                    <span class="item-name">-  20 Thuốc Hợp Thành Hồn Tinh - Thủy </span>
+                                    <span class="item-name">-  20 Thuốc Hợp Thành Hồn Tinh - Thổ </span>
+                                    <span class="item-name">-  20 Thuốc Hợp Thành Hồn Tinh - Lôi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_12.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Hồn Tinh - Đỏ TC</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 200,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Hồn Tinh - Quang - Đỏ 3 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Ám - Đỏ 3 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Phong - Đỏ 3 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Hỏa - Đỏ 3 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Thủy - Đỏ 3 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Thổ - Đỏ 3 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Lôi - Đỏ 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_13.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Hồn Tinh - Thần Thoại</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 400,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Hồn Tinh - Quang - Đỏ 4 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Ám - Đỏ 4 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Phong - Đỏ 4 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Hỏa - Đỏ 4 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Thủy - Đỏ 4 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Thổ - Đỏ 4 </span>
+                                    <span class="item-name">-  1 Hồn Tinh - Lôi - Đỏ 4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_14.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Hồn Tinh - Viễn Cổ</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 500,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Áo Giáp Sử Thi Đỏ 3 Sao </span>
+                                    <span class="item-name">-  1 Giáp Ngực Sử Thi Đỏ 3 Sao </span>
+                                    <span class="item-name">-  1 Giáp Đuôi Sử Thi Đỏ 3 Sao </span>
+                                    <span class="item-name">-  1 Quần Giáp Sử Thi Đỏ 3 Sao </span>
+                                    <span class="item-name">-  1 Giày Chiến Sử Thi Đỏ 3 Sao </span>
+                                    <span class="item-name">-  1 Mũ Giáp Sử Thi Đỏ 3 Sao</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_15.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói TB Ma Thú Đỏ</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 400,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Áo Giáp Truyền Thuyết Hồng 1 Sao </span>
+                                    <span class="item-name">-  1 Giáp Ngực Truyền Thuyết Hồng 1 Sao </span>
+                                    <span class="item-name">-  1 Giáp Đuôi Truyền Thuyết Hồng 1 Sao </span>
+                                    <span class="item-name">-  1 Quần Giáp Truyền Thuyết Hồng 1 Sao </span>
+                                    <span class="item-name">-  1 Giày Chiến Truyền Thuyết Hồng 1 Sao </span>
+                                    <span class="item-name">-  1 Mũ Giáp Truyền Thuyết Hồng 1 Sao</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_16.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói TB Ma Thú Hồng</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 900,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Thần Diện Hồng 4 sao </span>
+                                    <span class="item-name">-  1 Thần Huy Hồng 4 sao </span>
+                                    <span class="item-name">-  1 Thần Kính Hồng 4 sao </span>
+                                    <span class="item-name">-  1 Thần Vũ Hồng 4 sao</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_17.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói TB Thần</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 400,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 [3 Sao] Nón Quan chủ Màu Đỏ </span>
+                                    <span class="item-name">-  1 [3 Sao] Yên Giáp Màu Đỏ </span>
+                                    <span class="item-name">-  1 [3 Sao] Khải Giáp Màu Đỏ </span>
+                                    <span class="item-name">-  1 [3 Sao] Hộ Đùi Màu Đỏ </span>
+                                    <span class="item-name">-  1 [3 Sao] Bộ Bước Màu Đỏ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_18.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Gói Totem Đỏ 3 Sao</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 400,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Vân Ấn Đỏ Bậc 10 </span>
+                                    <span class="item-name">-  1 Vũ Ấn Đỏ Bậc 10 </span>
+                                    <span class="item-name">-  1 Sương Ấn Đỏ Bậc 10 </span>
+                                    <span class="item-name">-  1 Tuyết Ấn Đỏ Bậc 10 </span>
+                                    <span class="item-name">-  1 Băng Ấn Đỏ Bậc 10 </span>
+                                    <span class="item-name">-  1 Sa Ấn Đỏ Bậc 10 </span>
+                                    <span class="item-name">-  1 Lôi Ấn Đỏ Bậc 10 </span>
+                                    <span class="item-name">-  1 Điện Ấn Đỏ Bậc 10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_19.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Chiến Ấn Đỏ Bậc 10</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 500,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Vân Ấn Hồng Bậc 10 </span>
+                                    <span class="item-name">-  1 Vũ Ấn Hồng Bậc 10 </span>
+                                    <span class="item-name">-  1 Sương Ấn Hồng Bậc 10 </span>
+                                    <span class="item-name">-  1 Tuyết Ấn Hồng Bậc 10 </span>
+                                    <span class="item-name">-  1 Băng Ấn Hồng Bậc 10 </span>
+                                    <span class="item-name">-  1 Sa Ấn Hồng Bậc 10 </span>
+                                    <span class="item-name">-  1 Lôi Ấn Hồng Bậc 10 </span>
+                                    <span class="item-name">-  1 Điện Ấn Hồng Bậc 10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_20.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Chiến Ấn Hồng Bậc 10</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 1,000,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Mũ Giáp Thần 7 </span>
+                                    <span class="item-name">-  1 Giáp Vai Thần Hộ 7 </span>
+                                    <span class="item-name">-  1 Áo Giáp Vĩnh Hằng 7 </span>
+                                    <span class="item-name">-  1 Găng Chiến Thánh Giả 7 </span>
+                                    <span class="item-name">-  1 Thắt Lưng Thủ Hộ 7 </span>
+                                    <span class="item-name">-  1 Quần Giáp Thần 7 </span>
+                                    <span class="item-name">-  1 Giày Chiến Thánh Quang 7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_21.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Kiếm Trang Đỏ Bậc 7</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 500,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Mũ Giáp Thần 8 </span>
+                                    <span class="item-name">-  1 Giáp Vai Thần Hộ 8 </span>
+                                    <span class="item-name">-  1 Áo Giáp Vĩnh Hằng 8 </span>
+                                    <span class="item-name">-  1 Găng Chiến Thánh Giả 8 </span>
+                                    <span class="item-name">-  1 Thắt Lưng Thủ Hộ 8 </span>
+                                    <span class="item-name">-  1 Quần Giáp Thần 8 </span>
+                                    <span class="item-name">-  1 Giày Chiến Thánh Quang 8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_22.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Kiếm Trang Hồng Bậc 8</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 1,000,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Phù Vân Mị Lụa - Tóc Thần </span>
+                                    <span class="item-name">-  1 Phù Vân Mị Lụa - Trang Phục Thần</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_23.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Thần Trang Mảnh 1</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 300,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Áo Gấm Rực Rỡ - Tóc Thần </span>
+                                    <span class="item-name">-  1 Áo Gấm Rực Rỡ - Trang Phục Thần</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_24.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Thần Trang Mảnh 2</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 300,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Phù Vân Ngưng Hương - Phong Cảnh Thần </span>
+                                    <span class="item-name">-  1 Thiên Hạ Quy Nhất - Hào Quang Thần</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_25.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Thần Quang Mảnh 1</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 900,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Lưu Quang Dạ - Phong Cảnh Thần </span>
+                                    <span class="item-name">-  1 Khổng Tước Xòe Cánh - Hào Quang Thần</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_26.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Thần Quang Mảnh 2</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 900,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Hợp Âm Dương - Cánh Thần </span>
+                                    <span class="item-name">-  1 Thiên Hạ Quy Nhất - Dấu Chân Thần</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_27.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Thần Phong Mảnh 1</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 900,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Khổng Tước Vút Bay - Cánh Thần </span>
+                                    <span class="item-name">-  1 Khổng Tước Xòe Cánh - Dấu Chân Thần</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_28.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Thần Phong Mảnh 2</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 900,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Thỏ Võ Sĩ - Pet Thần </span>
+                                    <span class="item-name">-  1 Hoàng Hôn - Thú Cưỡi Thần</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_29.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Thần Thú Mảnh 1</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 900,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Linh Vũ Thú - Pet Thần </span>
+                                    <span class="item-name">-  1 Lam Vũ Khổng Tước Loan - Thú Cưỡi Thần</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_30.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Thần Thú Mảnh 2</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 900,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Sân Khấu Neon - Thú Cưỡi Đôi </span>
+                                    <span class="item-name">-  1 Mèo Sonata - Pet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_31.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Bộ Đôi Vui Vẻ</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 500,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Chúa Tể Bầu Trời - Thú Cưỡi Đôi </span>
+                                    <span class="item-name">-  1 Tiểu Long Nhân - Pet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_32.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Bộ Đôi Nhật Hành</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 500,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Leviathan - Thú Cưỡi Đôi </span>
+                                    <span class="item-name">-  1 Nguyệt Linh Lộc - Pet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_33.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">Bộ Đôi Nguyệt Hành</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 500,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Vé Tăng Cấp Nhân Vật</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_34.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Vé Tăng Cấp Nhân Vật</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 25,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 2 Thẻ Mở Rộng Thần Hình</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_35.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">2 Thẻ Mở Rộng Thần Hình</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 50,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 80 Búa Cường Hóa Ma Binh - Sơ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_36.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">80 Búa Cường Hóa Ma Binh - Sơ</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 50,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 5 Gói Huy Hiệu C.Hóa Khiên Thần</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_37.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">5 Gói Huy Hiệu C.Hóa Khiên Thần</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 50,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 10 U Minh Thạch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_38.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">10 U Minh Thạch</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 50,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 50 Mảnh Nguồn Sợ Hãi - Tinh Linh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_39.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">50 Mảnh Nguồn Sợ Hãi - Tinh Linh</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 50,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 50 Mảnh Nữ Oa - Tinh Linh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_40.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">50 Mảnh Nữ Oa - Tinh Linh</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 50,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 100 Mảnh Dị Ma Đồng - Tinh Linh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_41.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">100 Mảnh Dị Ma Đồng - Tinh Linh</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 150,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 100 Mảnh Lôi Quang Thiết Đế - Tinh Linh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_42.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">100 Mảnh Lôi Quang Thiết Đế - Tinh Linh</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 150,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Thẻ Dũng Sĩ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_43.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Thẻ Dũng Sĩ</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Thẻ Tinh Nhuệ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_44.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Thẻ Tinh Nhuệ</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Thẻ Anh Hùng</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_45.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Thẻ Anh Hùng</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Huy Hiệu Vinh Quang</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_46.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Huy Hiệu Vinh Quang</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Huy Hiệu Diệu Thế</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_47.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Huy Hiệu Diệu Thế</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Huy Hiệu Vinh Diệu UR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_48.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Huy Hiệu Vinh Diệu UR</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 200,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Chương Vinh Quang UR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_49.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Chương Vinh Quang UR</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 200,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Thánh Quang Ấn MR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_50.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Thánh Quang Ấn MR</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 200,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Thần Kỹ ST Vượt Trội Bậc 6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_51.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Thần Kỹ ST Vượt Trội Bậc 6</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Thần Kỹ Trọng Kích Bậc 7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_52.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Thần Kỹ Trọng Kích Bậc 7</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Thần Kỹ Bùng Nổ Liệt Diễm Bậc 8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_53.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Thần Kỹ Bùng Nổ Liệt Diễm Bậc 8</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Thần Kỹ Lĩnh Hội Bậc 9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_54.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Thần Kỹ Lĩnh Hội Bậc 9</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Thần Kỹ Bị Thương Bậc 10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_55.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Thần Kỹ Bị Thương Bậc 10</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Thần Kỹ Tăng Chí Mạng Bậc 11</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_56.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Thần Kỹ Tăng Chí Mạng Bậc 11</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Gói Kho Báu Anh Linh 2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_57.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Gói Kho Báu Anh Linh 2</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 4 Rương Chọn T.Bị Anh Linh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_58.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">4 Rương Chọn T.Bị Anh Linh</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Thần Sức Đỏ 3 Sao TC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_59.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Thần Sức Đỏ 3 Sao TC</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Rương Đồ Giám Hồng TC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_60.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Rương Đồ Giám Hồng TC</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 10 Đá Hợp Thành T.Bị TC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_61.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">10 Đá Hợp Thành T.Bị TC</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 5 Hợp Kim Huyết Long Cao</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_62.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">5 Hợp Kim Huyết Long Cao</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 150,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 3 Gói Quay 10%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_63.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">3 Gói Quay 10%</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 100,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 50 Đá Vạn Năng</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_64.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">50 Đá Vạn Năng</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 150,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Đá Hợp Thành Tăng Bậc Trang Sức TC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_65.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Đá Hợp Thành Tăng Bậc Trang Sức TC</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 150,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Rương Hợp Kim Long Cốt TC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_66.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Rương Hợp Kim Long Cốt TC</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 150,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Rương Chọn Thần Khí Truyền Thuyết 2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_67.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Rương Chọn Thần Khí Truyền Thuyết 2</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 200,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Lệnh Ra Trận - Đa Sắc</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_68.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Lệnh Ra Trận - Đa Sắc</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 200,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 2 Vé Mở Rộng Ma Thú</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_69.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">2 Vé Mở Rộng Ma Thú</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 200,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Rương Thánh Vật Tự Chọn UR I</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_70.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Rương Thánh Vật Tự Chọn UR I</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 250,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Rương Chọn Ma Binh 2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_71.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Rương Chọn Ma Binh 2</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 250,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 10 Văn Sức Hệ Hỏa Tự Chọn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_72.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">10 Văn Sức Hệ Hỏa Tự Chọn</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 300,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 10 Văn Sức Hệ Thủy Tự Chọn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_73.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">10 Văn Sức Hệ Thủy Tự Chọn</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 300,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 10 Văn Sức Hệ Phong Tự Chọn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_74.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">10 Văn Sức Hệ Phong Tự Chọn</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 300,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 10 Văn Sức Hệ Thổ Tự Chọn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_75.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">10 Văn Sức Hệ Thổ Tự Chọn</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 300,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 10 Văn Sức Hệ Kim Tự Chọn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_76.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">10 Văn Sức Hệ Kim Tự Chọn</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 300,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 2 Rương Động Tác Cá Nhân TC I</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_77.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">2 Rương Động Tác Cá Nhân TC I</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 350,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Kích Chiến Hải Thần - Dị Bảo Kiếm Thánh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_78.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Kích Chiến Hải Thần - Dị Bảo Kiếm Thánh</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 500,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Khốn Thú Dư Đấu - Dị Bảo Kiếm Thánh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_79.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Khốn Thú Dư Đấu - Dị Bảo Kiếm Thánh</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 500,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Long Châu Thiên Mạch Cấp 8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_80.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Long Châu Thiên Mạch Cấp 8</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 650,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Long Châu Thiên Mạch Cấp 9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_81.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Long Châu Thiên Mạch Cấp 9</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 850,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="main-item">
+
+                    <div class="icon-info">
+                        <div class="tooltiptext">
+                            <div class="tooltip-title">
+                                <strong>Bao gồm:</strong>
+                            </div>
+                            <div class="tooltip-item">
+                                <div class="item-info">
+
+                                    <span class="item-name">- 1 Long Châu Thiên Mạch Cấp 10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giftimg" style="background:url(https://chiendia.dzogame.vn/Assets/BlackMarket/imgs/BlackMarket/item/TDDQ_123_82.png) 0 0; background-size: 100%; background-repeat: no-repeat"></div>
+                    <div class="listboxsRight">
+                        <div class="boxName">1 Long Châu Thiên Mạch Cấp 10</div>
+                        <div class="price">
+                            <div class="price-sell">Điểm Đổi: 1,000,000 </div>
+                        </div>
+                                <a href="javascript:ShowLogin('black-market');" class="btn-gobuy"></a>
+
+                    </div>
+                </div>
+            </li>
+
+
+
+    </ul>
+</div>
+
+            
+            
+
+
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+
+<footer>
+    <div class="footer-box">
+        <div class="footer-item-box footer-logo-box">
+            <a class="logo-box dzo-logo-box" href="https://dzogame.vn/">
+                <span class="logo dzo-logo"></span>
+            </a>
+            
+        </div>
+        <div class="footer-item-box footer-info-rule-box">
+            <div class="footer-info-rule-item footer-info-box">
+                <div class="footer-info-item location">
+                    <div class="footer-info-icon location-icon">
+                        <a href="javascript:locout()" id="location-id"></a>
+                    </div>
+                    <div class="footer-info-content motion">
+                        <b>CÔNG TY TNHH DZOGAME</b><br>
+                        T5-04 Tòa nhà Lữ Gia, Số 70 Lữ Gia P15, Q.11, TP.Hồ Chí Minh<br>
+                        <b>MSDN</b> : 0304347356
+                    </div>
+                </div>
+                <div class="footer-info-item number">
+                    <div class="footer-info-icon number-icon">
+                        <a href="javascript:munberout()" id="number-id"></a>
+                    </div>
+                    <div class="footer-info-content motion">
+                        Công Ty : info@dzogame.vn
+                        <br>
+                        Tel: 028.62644988
+                    </div>
+                </div>
+                <div class="footer-info-item mail">
+                    <div class="footer-info-icon mail-icon">
+                        <a href="javascript:mailout()" id="mail-id"></a>
+                    </div>
+                    <div class="footer-info-content motion">
+                        Hỗ Trợ :<a href="https://hotro.dzogame.vn/"> https://hotro.dzogame.vn</a>
+                        <br>
+                        Call center: 0988.222.048
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info-rule-item footer-rule-box">
+                <a href="https://chiendia.dzogame.vn/nap-the/quy-tac-cua-tro-choi-25046">Quy Tắc Trò Chơi </a>
+            <span><b>Giấy Phép Số: </b>200/QĐ-BTTTT cấp ngày 22/02/2024</span> 
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function locout() {
+        $('.location').toggleClass("active");
+        $('.number').removeClass("active");
+        $('.mail').removeClass("active");
+    }
+    function mailout() {
+        $('.location').removeClass("active");
+        $('.number').removeClass("active");
+        $('.mail').toggleClass("active");
+    }
+    function munberout() {
+        $('.location').removeClass("active");
+        $('.number').toggleClass("active");
+        $('.mail').removeClass("active");
+    }
+
+</script>
+
+
+
+    </main>
+    
+
+
+    
+    
+    <script src="/JS/js2.js"></script>
+
+    <script src="/JS/jquery-ajax.js"></script>
+
+
+    <script type="text/javascript" src="/JS/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //ShowLogin('black-market');
+            ShowPopupChooseServer(0);
+        });
+
+        if ($('#err').val() != '') {
+
+            swal('', '', "warning");
+        }
+    </script>
+
+
+    
+    <script defer="" src="/JS/DzoHeaderMenu2025.js"></script>
+    <script>
+        function DeviceDetect() {
+            var userAgent = navigator.userAgent;
+
+            if (userAgent.match(/Android/i)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=vn.dzogame.cd"
+            } else if (userAgent.match(/iPhone|iPad|iPod/i)) {
+                window.location.href = "https://apps.apple.com/vn/app/chi%E1%BA%BFn-%C4%91%E1%BB%8Ba/id6466594572"
+            } else {
+                window.location.href = "https://www.facebook.com/ChienDia.VietNam"
+            }
+        }
+    </script><iframe allow="join-ad-interest-group" data-tagging-id="AW-11432137975" data-load-time="1748140386984" height="0" width="0" src="https://td.doubleclick.net/td/rul/11432137975?random=1748140386970&amp;cv=11&amp;fst=1748140386970&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be55l1v9172417121za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103130498~103130500~103200004~103233427~103252644~103252646~104481633~104481635&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fchiendia.dzogame.vn%2Fblack-market&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=black-market%20-%20Chi%E1%BA%BFn%20%C4%90%E1%BB%8Ba%20-%20Chi%E1%BA%BFn%20Kh%C3%B4ng%20Gi%E1%BB%9Bi%20H%E1%BA%A1n&amp;npa=0&amp;pscdl=noapi&amp;auid=755562299.1748087818&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B136.0.7103.114%7CGoogle%2520Chrome%3B136.0.7103.114%7CNot.A%252FBrand%3B99.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config" style="display: none; visibility: hidden;"></iframe><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+</body>
+
+</html>
